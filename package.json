@@ -24,7 +24,7 @@
     "typescript": "5.9.3"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,mjs,cjs}": "pnpm run lint"
+    "*.{js,jsx,ts,tsx,mjs,cjs}": "pnpm run lint --fix"
   },
   "packageManager": "pnpm@10.32.1"
 }

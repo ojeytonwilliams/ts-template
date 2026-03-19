@@ -20,5 +20,8 @@
     "typeAware": true,
     "typeCheck": true
   },
-  "ignorePatterns": ["dist/**"]
+  "ignorePatterns": ["dist/**"],
+  "rules": {
+    "id-length": "off"
+  }
 }

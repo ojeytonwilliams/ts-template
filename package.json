@@ -8,8 +8,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "lint": "oxlint src/**",
-    "lint:fix": "oxlint --fix src/**",
+    "lint": "oxlint src/**/*",
+    "lint:fix": "oxlint --fix src/**/*",
     "test": "echo \"Error: no test specified\" && exit 1",
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",

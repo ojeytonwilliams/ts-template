@@ -24,6 +24,8 @@
   "rules": {
     "id-length": "off",
     "import/no-named-export": "off",
-    "import/no-default-export": "error"
-  }
+    "import/no-default-export": "error",
+    "vitest/prefer-describe-function-title": "error",
+    "jest/valid-title": "off"
+  },
 }

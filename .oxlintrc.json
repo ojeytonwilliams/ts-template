@@ -22,6 +22,8 @@
   },
   "ignorePatterns": ["dist/**"],
   "rules": {
-    "id-length": "off"
+    "id-length": "off",
+    "import/no-named-export": "off",
+    "import/no-default-export": "error"
   }
 }

@@ -8,8 +8,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "lint": "oxlint src/**/*",
-    "lint:fix": "oxlint --fix src/**/*",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
     "test": "vitest run",
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",

@@ -31,12 +31,15 @@
     "import/group-exports": "error",
     "import/prefer-default-export": "off",
     /* Various rules conflict  */
-    "no-duplicate-imports": ["error", { "allowSeparateTypeImports": true}],
+    "no-duplicate-imports": ["error", { "allowSeparateTypeImports": true }],
     /* Test specific rules below. Move to override when override bugs are fixed */
     "vitest/prefer-describe-function-title": "error",
     "jest/valid-title": "off",
     "max-lines-per-function": "off",
     "max-statements": "off",
-    "no-magic-numbers": "off"
-  },
+    "no-magic-numbers": "off",
+    "max-lines": ["error", { "max": 1000 }],
+    "no-hooks": "off",
+    "init-declarations": "off"
+  }
 }

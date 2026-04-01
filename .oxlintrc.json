@@ -15,10 +15,14 @@
   },
   "ignorePatterns": ["dist/**"],
   "rules": {
+    /* This is a fine rule, but only if it's auto-fixable (which it isn't right now) */
+    "sort-imports": "off",
     /* Small ids are fine. Correct usage is too context-dependent for a lint
     rule*/
     "id-length": "off",
-    /* Ternaries are great, just don't nest them too deeply */
+    /* I don't find `() => voidFun()` confusing. */
+    "typescript/no-confusing-void-expression": ["error", { "ignoreArrowShorthand": true }],
+    /* Ternaries are fine - excessive nesting is not */
     "no-ternary": "off",
     /* Import: each module should have a single export declaration so it's
     immediately obvious what is in the public api */
@@ -44,6 +48,13 @@
     "no-hooks": "off",
     /* A fairly common pattern is to declare a variable in describe block and
     initialize it in a hook. We want to allow this. */
-    "init-declarations": "off"
+    "init-declarations": "off",
+    /* Strictness is preferrable for true or false */
+    "vitest/prefer-to-be-falsy": "off",
+    "vitest/prefer-to-be-truthy": "off",
+    /* Either calledOnce or calledTimes(1) is fine, but we should pick one for consistency */
+    "vitest/prefer-called-times": "off",
+    /* We're more interested in testing behaviour. If a test needs to make an unsafe assertion, that's okay */
+    "typescript/no-unsafe-type-assertion": "off"
   }
 }
